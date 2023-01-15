@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Item from "./Item";
 
 function ShoppingList({ items }) {
+  const selectedCategory = useState
   return (
     <div className="ShoppingList">
       <div className="Filter">
