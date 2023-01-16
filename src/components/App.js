@@ -12,15 +12,15 @@ function App() {
     setMode((darkMode) => !darkMode);
   }
   
-  const appClass = darkMode ? "App dark" : "App light"
+  const appClass = darkMode ? "App light" : "App dark"
 
   const modes = darkMode ? "Dark" : "Light"
 
   return (
-    <div className={appClass}>
+    <div className= {appClass} >
       <header>
-        <h2>Shopster</h2>
-        <button onClick={handleClick}>{modes} Mode</button>
+        <h2> Shopster </h2>
+        <button onClick={handleClick}> {modes} Mode</button>
       </header>
       <ShoppingList items={itemData} />
     </div>

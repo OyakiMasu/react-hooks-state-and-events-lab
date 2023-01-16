@@ -15,13 +15,13 @@ function Item({ name, category }) {
   let changes = itemsList ? "Add to Cart" : "Remove from Cart"
 
   
-  const itemsClass = {itemsList} ? "in-cart" : ""
+  const itemsClass = itemsList ?"in-cart": ""
   
   return (
     <li className={itemsClass}>
       <span>{name}</span>
       <span className="category">{category}</span>
-      <button className="add" onClick={changeClick}>{changes}</button>
+      <button className="add" onClick= { changeClick }> {changes} </button>
     </li>
   );
 }
