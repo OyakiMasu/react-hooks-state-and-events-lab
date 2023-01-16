@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 
 function Item({ name, category }) {
-
+   //The useState for the current items
    const [itemsList, setItems] = useState(false);
 
+   //
+
+     
+  //Function catering for the button
    function changeClick(){
     setItems((itemsList) => !itemsList);
   }
-  
-  const changes = itemsList ? "Add to Cart" : "Remove from Cart"
+  //Changes the text of the button
+  let changes = itemsList ? "Add to Cart" : "Remove from Cart"
 
   
-  //This is to change the text in li
   const itemsClass = {itemsList} ? "in-cart" : ""
   
   return (
